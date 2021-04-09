@@ -252,3 +252,40 @@ function newLagrangeApprox = addPointLaGrange(X,Y,x,y, val)
     
     newLagrangeApprox = evalLaGrange(X, Y, val);
 end
+
+%{
+Expected Output
+
+Comparing Lagrange Polynomial & Neville's Algorithm
+---------------------------------------------------
+points:
+(8.1,16.944600)
+(8.3,17.564920)
+(8.6,18.505150)
+(8.7,18.820910)
+
+targeted x-value: 8.40
+
+Approximating target using Neville's Algorithm
+
+Elapsed time is 0.004252 seconds.
+Neville Approximation using all points: 17.87709
+
+
+Approximating target using LaGrange Polynomial
+
+Elapsed time is 1.802849 seconds.
+Approximation using LaGrange Polynomial of all points: 17.87709
+
+
+Adding point (8.9,19.12345) and approximating target using Neville's Algorithm
+
+Elapsed time is 0.001234 seconds.
+Neville Approximation of target after adding new point: 17.85633
+
+
+Adding point (8.9,19.12345) and approximating target using LaGrange Polynomial
+
+Elapsed time is 0.938746 seconds.
+Approximation using Lagrange Polynomial after adding new point: 17.85633
+%}
